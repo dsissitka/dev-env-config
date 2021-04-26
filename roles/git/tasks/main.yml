@@ -1,0 +1,14 @@
+- name: Install.
+
+  package:
+    name: git
+    state: present
+
+- name: Copy .gitconfig.
+
+  copy:
+    dest: /home/david/.gitconfig
+    group: david
+    mode: "0664"
+    owner: david
+    src: files/gitconfig
