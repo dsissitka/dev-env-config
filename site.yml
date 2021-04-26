@@ -18,3 +18,11 @@
         name: git
 
       tags: git
+
+    - name: "java : Install."
+
+      package:
+        name: openjdk-11-jdk
+        state: present
+
+      tags: java
