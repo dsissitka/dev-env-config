@@ -26,3 +26,11 @@
         state: present
 
       tags: java
+
+    - name: "npm : Install."
+
+      package:
+        name: npm
+        state: present
+
+      tags: npm
