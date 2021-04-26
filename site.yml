@@ -34,3 +34,11 @@
         state: present
 
       tags: npm
+
+    - name: "prettier : Install."
+
+      community.general.npm:
+        global: yes
+        name: prettier
+
+      tags: prettier
