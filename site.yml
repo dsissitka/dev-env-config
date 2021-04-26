@@ -2,6 +2,11 @@
 
   tasks:
     - import_role:
+        name: ubuntu
+
+      tags: ubuntu
+
+    - import_role:
         name: git
 
       tags: git

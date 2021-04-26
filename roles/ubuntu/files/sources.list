@@ -1,0 +1,10 @@
+deb http://mirrors.mit.edu/ubuntu hirsute main restricted
+deb http://mirrors.mit.edu/ubuntu hirsute multiverse
+deb http://mirrors.mit.edu/ubuntu hirsute universe
+deb http://mirrors.mit.edu/ubuntu hirsute-backports main restricted universe multiverse
+deb http://mirrors.mit.edu/ubuntu hirsute-security main restricted
+deb http://mirrors.mit.edu/ubuntu hirsute-security multiverse
+deb http://mirrors.mit.edu/ubuntu hirsute-security universe
+deb http://mirrors.mit.edu/ubuntu hirsute-updates main restricted
+deb http://mirrors.mit.edu/ubuntu hirsute-updates multiverse
+deb http://mirrors.mit.edu/ubuntu hirsute-updates universe
