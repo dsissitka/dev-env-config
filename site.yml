@@ -6,6 +6,14 @@
 
       tags: ubuntu
 
+    - name: "docker : Install."
+
+      package:
+        name: docker.io
+        state: present
+
+      tags: docker
+
     - import_role:
         name: git
 
