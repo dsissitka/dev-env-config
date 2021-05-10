@@ -15,6 +15,11 @@
       tags: docker
 
     - import_role:
+        name: dotnet
+
+      tags: dotnet
+
+    - import_role:
         name: git
 
       tags: git

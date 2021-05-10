@@ -1,0 +1,19 @@
+- name: Add APT repo.
+
+  apt:
+    deb: https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-prod.deb
+
+  register: result
+
+- name: Update APT cache.
+
+  apt:
+    update_cache: yes
+
+  when: result is changed
+
+- name: Install.
+
+  package:
+    name: dotnet-sdk-5.0
+    state: present
