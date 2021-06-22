@@ -1,3 +1,5 @@
+[core]
+	autocrlf = input
 [user]
 	email = me@dsissitka.com
 	name = David Sissitka
