@@ -44,8 +44,3 @@
         name: prettier
 
       tags: prettier
-
-    - name: "visual-studio-code : Install."
-
-      apt:
-        deb: https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
