@@ -32,6 +32,11 @@
 
       tags: java
 
+    - import_role:
+        name: neovim
+
+      tags: neovim
+
     - name: "npm : Install."
 
       package:

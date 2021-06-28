@@ -1,0 +1,41 @@
+- name: Install.
+
+  package:
+    name: neovim
+    state: present
+
+- name: Create config directory.
+
+  file:
+    group: david
+    mode: "0775"
+    owner: david
+    path: /home/david/.config/nvim
+    state: directory
+
+- name: Copy init.vim.
+
+  copy:
+    dest: /home/david/.config/nvim/init.vim
+    group: david
+    mode: "0664"
+    owner: david
+    src: files/init.vim
+
+- name: Create package directory.
+
+  file:
+    group: david
+    mode: "0775"
+    owner: david
+    path: /home/david/.local/share/nvim/site/pack/packages/start
+    state: directory
+
+- name: Install vim-autoformat.
+
+  git:
+    depth: 1
+    dest: /home/david/.local/share/nvim/site/pack/packages/start/vim-autoformat
+    repo: https://github.com/vim-autoformat/vim-autoformat
+
+  become_user: david
