@@ -1,5 +1,10 @@
 set hidden
 
+set expandtab
+set shiftwidth=4
+set tabstop=4
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " vim-autoformat
 """"""""""""""""""""""""""""""""""""""""""""""""""
