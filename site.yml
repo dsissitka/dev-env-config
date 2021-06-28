@@ -19,6 +19,14 @@
 
       tags: dotnet
 
+    - name: "firefox : Uninstall."
+
+      package:
+        name: firefox
+        state: absent
+
+      tags: firefox
+
     - import_role:
         name: git
 
