@@ -24,14 +24,6 @@
 
       tags: git
 
-    - name: "java : Install."
-
-      package:
-        name: openjdk-11-jdk
-        state: present
-
-      tags: java
-
     - import_role:
         name: neovim
 
