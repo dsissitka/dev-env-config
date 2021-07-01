@@ -59,3 +59,8 @@
         name: prettier
 
       tags: prettier
+
+    - import_role:
+        name: rider
+
+      tags: rider

@@ -1,0 +1,21 @@
+- name: Create app directory.
+
+  file:
+    group: david
+    mode: "0775"
+    owner: david
+    path: /home/david/apps/rider
+    state: directory
+
+- name: Install.
+
+  unarchive:
+    creates: /home/david/apps/rider/bin/rider.sh
+    dest: /home/david/apps/rider
+    remote_src: yes
+    src: https://download.jetbrains.com/rider/JetBrains.Rider-2021.1.3.tar.gz
+
+    extra_opts:
+      - --strip-components=1
+
+  become_user: david
